@@ -9,6 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 import com.bolsadeideas.springboot.backned.apirest.models.dao.IClienteDao;
 import com.bolsadeideas.springboot.backned.apirest.models.entity.Cliente;
 
+/*
+ * Los metodos de esta clase son proporcionados por CRUDRepository
+ */
 @Service
 public class ClienteServiceImp implements IClienteService{
 
