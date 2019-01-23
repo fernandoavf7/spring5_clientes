@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -22,11 +23,11 @@ import javax.persistence.TemporalType;
 public class Cliente implements Serializable{
 
 	/* debe llevar @Id para indicar que es un id 
-	 * e generatedValue identity para decir que sera autoincrementable
+	 * generatedValue identity para decir que sera autoincrementable
 	 */
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private long id;
 	private String nombre;
 	private String apellido;
 	private String email;
@@ -40,12 +41,19 @@ public class Cliente implements Serializable{
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
 	
+	/* antes de guardar un nuevo cliente seteara la fecha de creacion */
+	@PrePersist
+	public void prePersist() {
+		createAt = new Date();
+	}
+	
+	
 	
 	public long getId() {
 		return id;
 	}
 	
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	
