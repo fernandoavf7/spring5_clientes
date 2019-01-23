@@ -71,6 +71,7 @@ public class ClienteRestController {
 	//responde un 204
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Long id) {
+		System.out.println("id: "+id);
 		clienteService.delete(id);
 	}
 }
