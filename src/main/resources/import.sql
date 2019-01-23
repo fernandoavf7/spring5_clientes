@@ -1,0 +1,10 @@
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("Andres","Guzman","asas@asas.com","2018-01-01");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("dff","trtrtrt","awwa@asas.com","2018-01-01");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("yfufyuf","swsww","erer@asas.com","2018-01-01");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("Anbnvbnvdres","rerere","asas@asas.com","2018-01-04");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("cdert","ffrfrf","asags@asas.com","2018-01-01");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("bvvh","eeesese","asas@asas.com","2018-01-01");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("tty7y7y","tydtr","avsas@asas.com","2018-01-07");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("cyy","vuyv","sese@asas.com","2018-01-01");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("7t7","hjbhbhui","asars@asas.com","2018-01-01");
+INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("ioioiooi","jhjhjhj","trt@asas.com","2018-01-09");
