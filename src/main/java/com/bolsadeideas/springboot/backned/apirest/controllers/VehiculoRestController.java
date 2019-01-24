@@ -16,9 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bolsadeideas.springboot.backned.apirest.models.entity.Mascota;
 import com.bolsadeideas.springboot.backned.apirest.models.entity.Vehiculo;
-import com.bolsadeideas.springboot.backned.apirest.models.services.IMascotaService;
 import com.bolsadeideas.springboot.backned.apirest.models.services.IVehiculoService;
 
 @CrossOrigin(origins= {com.bolsadeideas.springboot.backned.apirest.SpringBootBackendApirestApplication.angularOrigin})
