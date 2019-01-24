@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.bolsadeideas.springboot.backned.apirest.models.dao.IMascotaDao;
-import com.bolsadeideas.springboot.backned.apirest.models.entity.Cliente;
 import com.bolsadeideas.springboot.backned.apirest.models.entity.Mascota;
 
 @Service

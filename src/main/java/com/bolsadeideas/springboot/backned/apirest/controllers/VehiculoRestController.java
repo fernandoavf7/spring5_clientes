@@ -1,6 +1,6 @@
 package com.bolsadeideas.springboot.backned.apirest.controllers;
 
-import java.util.Date;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,47 +17,48 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bolsadeideas.springboot.backned.apirest.models.entity.Mascota;
+import com.bolsadeideas.springboot.backned.apirest.models.entity.Vehiculo;
 import com.bolsadeideas.springboot.backned.apirest.models.services.IMascotaService;
+import com.bolsadeideas.springboot.backned.apirest.models.services.IVehiculoService;
 
 @CrossOrigin(origins= {com.bolsadeideas.springboot.backned.apirest.SpringBootBackendApirestApplication.angularOrigin})
 @RestController
 @RequestMapping("/api")
-public class MascotaRestController {
+public class VehiculoRestController {
 
 
 		@Autowired
-		private IMascotaService mascotaService;
+		private IVehiculoService vehiculoService;
+					
 		
-		@GetMapping("/mascotas")
-		public List<Mascota> index(){
-			return mascotaService.findAll();
+		@GetMapping("/vehiculos")
+		public List<Vehiculo> index(){
+			return vehiculoService.findAll();
 		}
 		
-		@GetMapping("/mascotas/{id}")
-		public Mascota show(@PathVariable Long id){
-		  return mascotaService.findById(id);
+		@GetMapping("/vehiculos/{id}")
+		public Vehiculo show(@PathVariable Long id){
+		  return vehiculoService.findById(id);
 		}
 		
-		@PostMapping("/mascotas")
+		@PostMapping("/vehiculos")
 		@ResponseStatus(HttpStatus.CREATED)
-		public Mascota create(@RequestBody Mascota cliente) {
-			return mascotaService.save(cliente);
+		public Vehiculo create(@RequestBody Vehiculo vehiculo) {
+			return vehiculoService.save(vehiculo);
 		}
 		
-		@PutMapping("/mascotas/{id}")
-		public Mascota update(@RequestBody Mascota mascota, @PathVariable Long id) {
-			Mascota mascotaActual = mascotaService.findById(id);
-			mascotaActual.setNombre(mascota.getNombre());
-			mascotaActual.setFecha_nacimiento(new Date());
-			return mascotaService.save(mascotaActual);
+		@PutMapping("/vehiculos/{id}")
+		public Vehiculo update(@RequestBody Vehiculo vehiculo, @PathVariable Long id) {
+			Vehiculo objActual = vehiculoService.findById(id);
+			objActual.setMarca(vehiculo.getMarca());
+			objActual.setModelo(vehiculo.getModelo());
+			return vehiculoService.save(objActual);
 		}
 		
 		
-		@DeleteMapping("/mascotas/{id}")
-		//responde un 204
+		@DeleteMapping("/vehiculos/{id}")
 		@ResponseStatus(HttpStatus.NO_CONTENT)
 		public void delete(@PathVariable Long id) {
-			System.out.println("MASCOTAAAAAAAAAAAAAA id: "+id);
-			mascotaService.delete(id);
+			vehiculoService.delete(id);
 		}
 }

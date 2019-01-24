@@ -11,7 +11,6 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name="mascota")
@@ -23,6 +22,7 @@ public class Mascota implements Serializable {
 	private String nombre;
 	@Temporal(TemporalType.DATE)
 	private Date fecha_nacimiento;
+	
 	public long getId() {
 		return id;
 	}
