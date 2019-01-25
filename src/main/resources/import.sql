@@ -2,9 +2,11 @@ INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("Andres","Guzma
 INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("dff","trtrtrt","awwa@asas.com","2018-01-01");
 INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("yfufyuf","swsww","erer@asas.com","2018-01-01");
 INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("Anbnvbnvdres","rerere","asas@asas.com","2018-01-04");
-INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("cdert","ffrfrf","asags@asas.com","2018-01-01");
-INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("bvvh","eeesese","asas@asas.com","2018-01-01");
-INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("tty7y7y","tydtr","avsas@asas.com","2018-01-07");
-INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("cyy","vuyv","sese@asas.com","2018-01-01");
-INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("7t7","hjbhbhui","asars@asas.com","2018-01-01");
-INSERT INTO cliente (nombre, apellido, email, create_at) VALUES ("ioioiooi","jhjhjhj","trt@asas.com","2018-01-09");
+INSERT INTO mascota (nombre, fecha_nacimiento) VALUES ("Cheddar", "1017-01-09");
+INSERT INTO vehiculo (marca, modelo) VALUES ("Chevrolet", "LUV");
+INSERT INTO marca (nombre) VALUES ("Chevrolet");
+INSERT INTO marca (nombre) VALUES ("Toyota");
+INSERT INTO marca (nombre) VALUES ("Susuki");
+INSERT INTO marca (nombre) VALUES ("Shelby");
+INSERT INTO marca (nombre) VALUES ("Yamaha");
+INSERT INTO marca (nombre) VALUES ("Subaru");
